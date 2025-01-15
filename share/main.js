@@ -74,4 +74,4 @@ if (re === -1) {
   updateItem(id, namer, 'red');
 }
 
-window.location.href = 'https://example.com';
+window.location.href = 'https://generatepassword-ochre.vercel.app/';

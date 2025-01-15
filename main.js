@@ -143,7 +143,7 @@ function formatHash(hash) {
 //! QR
 
 document.getElementById("generate-btn").addEventListener("click", () => {
-    const text = 'https://generatepassword-ochre.vercel.app/share.html?name=' + selectedValue.textContent + '&id=' + actualid;
+    const text = 'https://generatepassword-ochre.vercel.app/share/index.html?name=' + selectedValue.textContent + '&id=' + actualid;
   
     if (text.trim()) {
       // Abrir una nueva ventana

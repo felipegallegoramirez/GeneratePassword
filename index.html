@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="custom-select" id="customSelect">
+          <div class="select-display" id="selectedValue">None</div>
+          <div id="options" class="options">
+              <div id="opt1" class="option" data-value="id1"> 
+                <div class="circle"></div> 
+                <p>Perfil 1</p>
+              </div>
+              <div id="opt2" class="option" data-value="id2"> 
+                <div class="circle"></div> 
+                <p>Perfil 2</p>
+              </div>
+              <div id="opt3" class="option" data-value="id3"> 
+                <div class="circle"></div> 
+                <p>Perfil 3</p>
+              </div>
+              <div class="option agregar" data-value="agregar"> 
+                <p>Crear</p>
+              </div>
+          </div>
+      </div>
+      </nav>
+
+    </header>
+
+    <main id="main">
+      <div>
+        <div class="autocomplete-container">
+          <input type="text" id="autocomplete-input" placeholder="Website name">
+          <button id="search-button">Generate</button>
+          <div id="autocomplete-list" class="autocomplete-list"></div>
+        </div>
+        </div>
+        <div class="text">
+          <p class="subtitle">32 Characters:</p>
+          <p id="C32"></p>
+          <p class="subtitle">16 Characters:</p>
+          <p id="C16"></p>
+        </div>
+      </div>
+    </main>
+
+    <div>
+      <button id="generate-btn">Share porfile</button>
+      <div id="qrcode-container" style="margin-top: 20px;"></div>
+    </div>
+
+    <div id='form' class="form ocultar">
+      <div>
+        <input type="text" id="name" placeholder="Name">
+        <input type="password" id="password" placeholder="Password">
+        <button id="register">Submit</button>
+        <button id="delete">Delete</button>
+      </div>
+    </div>
+    <div id="background" class="background ocultar"></div>
+
+    <footer class="footer">
+      <p>EzCo 2025© all right reserved</p>
+    </footer>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</html>
+
+

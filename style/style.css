@@ -1,0 +1,243 @@
+:root {
+ --blue: #206FBC;
+ --yellow: #F9E14D;
+ --white: #F8F2ED;
+ --black: #120e0bb6;
+}
+
+*{
+    font-family: "Poppins";
+    color: var(--black);
+    font-size: 18px;
+}
+
+nav{
+    padding: 20px;
+}
+
+.custom-select {
+    position: relative;
+    width: 200px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+/* Estilo del área visible */
+.select-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* Estilo de las opciones desplegables */
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+/* Estilo de cada opción */
+.option {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    
+}
+
+.option>p{
+    margin: 0px;
+}
+
+.option:last-child {
+    border-bottom: none;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* Mostrar las opciones cuando se active */
+.custom-select.active .options {
+    display: block;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #206FBC;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+
+
+/* Autocompletar*/
+
+#main{
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.autocomplete-container {
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  input[type="text"]:active {
+    outline: 1px solid (--blue);
+  }
+
+  .autocomplete-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .autocomplete-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .text{
+    width: 300px;
+    text-align: left;
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--white);
+    text-align: center;
+  }
+
+  .footer p{
+    margin: 0px;
+    padding: 10px;
+  }
+
+
+  #generate-btn{
+    padding: 5px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+  }
+  .agregar>p{
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+
+  .background{
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .form{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: calc((100vh - 340px) / 2) calc((100vw - 300px) / 2);
+    padding: 30px;
+
+  }
+
+  .form>div{
+    width: 300px;
+    padding: 20px;
+  }
+
+  .form>div>input{
+    margin: 20px 0px;
+  }
+
+  .form>div>button{
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  input:active {
+    outline: 1px solid (--blue);
+  }
+
+  .ocultar{
+    display: none;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
